@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: itoken-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/ddmcc/itoken-config
+          search-paths: respo
+          username: ddmcc
+          password: jrz520
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
