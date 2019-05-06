@@ -1,20 +1,7 @@
 spring:
-  application:
-    name: itoken-zuul
-
-server:
-  port: 8769
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:10001/eureka/
-
-zuul:
-  routes:
-    api-a:
-      path: /api/a/**
-      serviceId: itoken-web-admin-ribbon
-    api-b:
-      path: /api/b/**
-      serviceId: itoken-web-admin-feign
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-zuul
+      label: master
+      profile: dev
