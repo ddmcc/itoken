@@ -26,3 +26,4 @@ hs_err_pid*
 # IDEA Files 
 .idea
 *.iml
+itoken-config/target/classes/application.yml
