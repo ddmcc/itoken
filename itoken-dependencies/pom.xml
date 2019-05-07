@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.2.RELEASE</version>
+        <version>2.0.3.RELEASE</version>
     </parent>
 
     <groupId>com.itoken</groupId>
@@ -26,12 +26,13 @@
 
         <!-- Spring Settings -->
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
-        <spring-boot-admin.version>2.0.0</spring-boot-admin.version>
+        <spring-boot-admin.version>2.0.1</spring-boot-admin.version>
         <zipkin.version>2.10.1</zipkin.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Cloud Begin -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -39,6 +40,38 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- Spring Cloud End -->
+
+            <!-- Spring Boot Admin Begin -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <!-- Spring Boot Admin End -->
+
+            <!-- ZipKin Begin -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <!-- ZipKin End -->
         </dependencies>
     </dependencyManagement>
 
@@ -172,6 +205,7 @@
     </build>
 
     <repositories>
+
         <repository>
             <id>aliyun-repos</id>
             <name>Aliyun Repository</name>
