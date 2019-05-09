@@ -218,6 +218,19 @@
     </distributionManagement>
 
     <repositories>
+
+        <repository>
+            <id>nexus</id>
+            <name>nexus Repository</name>
+            <url>http://192.168.171.132:8081/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
         <repository>
             <id>aliyun-repos</id>
             <name>Aliyun Repository</name>
