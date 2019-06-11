@@ -33,6 +33,8 @@
         <spring-boot-pagehelper.varsion>1.2.5</spring-boot-pagehelper.varsion>
         <!-- Environment Settings -->
         <mysql.version>5.1.34</mysql.version>
+        <lombok.version>1.16.18</lombok.version>
+        <guava.version>25.1-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -106,6 +108,19 @@
                 <version>${mysql.version}</version>
                 <scope>runtime</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
 
             <!-- Environment End -->
 

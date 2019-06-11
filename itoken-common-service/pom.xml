@@ -18,6 +18,15 @@
     <inceptionYear>2019-Now</inceptionYear>
 
     <dependencies>
+
+        <!-- Project Begin -->
+        <dependency>
+            <groupId>com.itoken</groupId>
+            <artifactId>itoken-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- Project End -->
+
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -26,10 +35,6 @@
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.pagehelper</groupId>
