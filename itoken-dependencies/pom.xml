@@ -36,6 +36,7 @@
         <lombok.version>1.16.18</lombok.version>
         <guava.version>25.1-jre</guava.version>
         <nekohtml.version>1.9.22</nekohtml.version>
+        <fastjson.version>1.2.54</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -121,6 +122,13 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
 
             <!-- 解决 thymeleaf 模板引擎一定要执行严格的 html5 格式校验问题 -->
             <dependency>
