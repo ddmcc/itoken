@@ -32,6 +32,7 @@ public class AdminController {
         if (null == tbSysUser) {
             return BaseResult.notOk(Lists.newArrayList(new BaseResult.Error("", "账号或密码错误")));
         }
+
         return BaseResult.ok(tbSysUser);
     }
 
