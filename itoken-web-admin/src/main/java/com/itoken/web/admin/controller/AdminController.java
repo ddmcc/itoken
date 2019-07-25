@@ -15,7 +15,7 @@ public class AdminController {
 
     @RequestMapping(value = {"","/login"}, method = RequestMethod.GET)
     public String login() {
-        String login = adminService.login("123456", "123456");
+        String login = adminService.login("30811997@qq.com", "123456");
         System.out.println(login);
         return "index";
     }
